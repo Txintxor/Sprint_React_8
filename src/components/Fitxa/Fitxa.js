@@ -1,8 +1,8 @@
 import React from "react";
-
+import {Fitx}  from "../styled-c/styled-components.js";
 const Fitxa = () => {
   return (
-    <div><h1>Fitxa</h1></div>
+    <Fitx><h1>Fitxa</h1></Fitx>
     );
 }
  

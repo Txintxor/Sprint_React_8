@@ -1,8 +1,8 @@
 import React from "react";
-
+import {Log}  from "../styled-c/styled-components.js";
 const Login = () => {
   return (
-    <div><h1>Login</h1></div>
+    <Log><h1>Login</h1></Log>
     );
 }
  

@@ -8,7 +8,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 export default () => (
   <Router>
-    <Routes>
+    <Routes style= {{ background: "red"}}>
       <Route path="/" element={<Home />} />
       <Route path="/Naus" element={<Naus />} />
       <Route path="/Fitxa" element={<Fitxa />} />
