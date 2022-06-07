@@ -1,8 +1,9 @@
 import React from "react";
 import {Hom}  from "../styled-c/styled-components.js";
+import image from "../../img/home.jpg";
 const Home = () => {
   return (
-    <Hom><h1>Home</h1></Hom>
+    <Hom><a href="/Ships"><img src={image} alt="in a galaxy far far away " /></a></Hom>
     );
 }
  
