@@ -16,9 +16,6 @@ const UlNav = styled.ul`
   align-items: center;
 `;
 
-const Fitx = styled.div`
-  margin-top: 5rem;
-`;
 const Hom = styled.div`
   display: flex;
   height: 80vh;
@@ -26,18 +23,54 @@ const Hom = styled.div`
   align-items: center;
   margin-top: 5rem;
 `;
-const Log = styled.div`
+const Log = styled.form`
+  display: flex;
+  flex-direction: column;
+  min-width: fit-content;
   margin-top: 5rem;
+  padding: 2rem;
+  border: solid #ffe91fdc 3px;
+  border-radius: 5px;
+  box-shadow: 3px 5px #ffe91fdc;
+  color: white;
+  background: rgba(0, 0, 0, 0.6);
 `;
+
+const Regist = styled.div`
+display: flex;
+flex-direction: column;
+min-width: fit-content;
+margin-top: 5rem;
+padding: 2rem;
+border: solid #ffe91fdc 3px;
+border-radius: 5px;
+box-shadow: 3px 5px #ffe91fdc;
+color: white;
+background: rgba(0, 0, 0, 0.6);
+`;
+
+const Fitx = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: fit-content;
+  border: solid #ffe91fdc 3px;
+  border-radius: 5px;
+  box-shadow: 3px 5px #ffe91fdc;
+  margin-top: 5rem;
+  padding: 1rem;
+  font-size: 1.5rem;
+  color: white;
+  background: rgba(0, 0, 0, 0.6);
+`;
+
 const Nau = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   color: white;
   margin-top: 5rem;
-`;
-const Regist = styled.div`
-  margin-top: 5rem;
+  background: rgba(0, 0, 0, 0.6);
 `;
 
 const grow = keyframes`
@@ -60,15 +93,17 @@ const shrink = keyframes`
   }
   `;
 
-const ShipContent = styled.a`
+const ShipContent = styled.div`
   border: solid #ffe91fdc 3px;
   border-radius: 5px;
   box-shadow: 3px 5px #ffe91fdc;
-  min-width: 35rem;
+  width: 35rem;
+  height: fit-content;
   margin: 1rem 5rem;
   padding: 1rem;
   font-size: 1.5rem;
   animation: ${shrink} 0.25s linear;
+  word-break: break-all;
 
   &:hover {
     animation: ${grow} 0.25s linear;
@@ -76,4 +111,17 @@ const ShipContent = styled.a`
   }
 `;
 
-export { NaviBar, UlNav, Fitx, Hom, Log, Nau, Regist, ShipContent };
+const Button = styled.a`
+  width: 60%;
+  background: transparent;
+  border: solid #ffe91fdc 3px;
+  border-radius: 5px;
+  box-shadow: 3px 3px #ffe91fdc;
+  font-size: 1.75rem;
+  margin-top: 2rem;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+`;
+
+export { Button, NaviBar, UlNav, Fitx, Hom, Log, Nau, Regist, ShipContent };

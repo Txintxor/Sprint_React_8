@@ -12,7 +12,7 @@ const NavBar = () => {
           <a href="/Naus">Naus</a>
         </li>
       </UlNav>
-      <p><img src={image} style={{ margin : 0}} alt="Star Wars logo" /></p>
+      <a target="_blank" href="https://www.youtube.com/watch?v=5pqtN8vbRuE" rel="noreferrer" ><img src={image} style={{ margin : 0}} alt="Star Wars logo" /></a>
       <UlNav>
         <li>
           <a href="/Login">Log in</a>

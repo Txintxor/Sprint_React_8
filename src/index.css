@@ -34,6 +34,7 @@ body {
 	-webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
+	background-attachment: fixed;
 	line-height: 1;
 }
 ol, ul {
@@ -57,14 +58,20 @@ a {
 	margin: 0 1rem;
 }
 
+input {
+	background: #ffe91f9d;
+	border: none;
+	border-radius: 5px;
+	margin: 1rem;
+	font-size: 1.5rem;
+	font-family: 'Orbitron', sans-serif;
+}
+
 
 @import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
 
 body {
 	font-family: 'Orbitron', sans-serif;
-	display:flex;
-	flex-direction: row;
-	justify-content: center;
 }
 
 .App {
@@ -72,10 +79,31 @@ body {
 	display:flex;
 	flex-direction: row;
 	justify-content: center;
-
+	align-items: center;
 }
 
-.shipName {
+.shipName,
+.cardTitle
+ {
+	font-size: 1.75rem;
 	margin-bottom: 1rem;
-	color: #ffe91fdc
+	color: #ffe91fdc;
 }
+
+.shipModel {	
+	word-break:normal;
+}
+
+.cardText {
+	padding: .75rem;
+}
+
+
+.logTitle {
+	font-size: 1.75rem;
+	margin-bottom: 1rem;
+	text-align: center;
+
+}
+
+
