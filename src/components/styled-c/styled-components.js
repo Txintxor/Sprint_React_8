@@ -26,6 +26,7 @@ const Hom = styled.div`
 const Log = styled.form`
   display: flex;
   flex-direction: column;
+  align-items: center;
   min-width: fit-content;
   margin-top: 5rem;
   padding: 2rem;
@@ -36,9 +37,10 @@ const Log = styled.form`
   background: rgba(0, 0, 0, 0.6);
 `;
 
-const Regist = styled.div`
+const Regist = styled.form`
 display: flex;
 flex-direction: column;
+align-items: center;
 min-width: fit-content;
 margin-top: 5rem;
 padding: 2rem;
@@ -123,5 +125,17 @@ const Button = styled.a`
   color: white;
   cursor: pointer;
 `;
+const ButtonSubmit = styled.input`
+  width: 60%;
+  background: transparent;
+  border: solid #ffe91fdc 3px;
+  border-radius: 5px;
+  box-shadow: 3px 3px #ffe91fdc;
+  font-size: 1.75rem;
+  margin-top: 2rem;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+`;
 
-export { Button, NaviBar, UlNav, Fitx, Hom, Log, Nau, Regist, ShipContent };
+export { Button, ButtonSubmit, NaviBar, UlNav, Fitx, Hom, Log, Nau, Regist, ShipContent };
