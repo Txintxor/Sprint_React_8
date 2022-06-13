@@ -1,10 +1,12 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import axios from "axios";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Nau, ShipContent } from "../styled-c/styled-components.js";
 
 let page = 1;
-const Naus = (props) => {
+const Naus = () => {
+  const navigate = useNavigate();
+
   const [ships, setShips] = useState([]);
 
   const loadPage = () => {
@@ -35,6 +37,21 @@ const Naus = (props) => {
     }
   };
 
+  // No encontré la forma de usar las instrucciones del link (tambien investigué
+  // por otro lado y no me quedó claro ) ya que
+  // han cambiado cosas (redirect ya no funciona ahora es useNAvigate) además
+  // que tengo Route en un componente separado de App.js y el login que debería
+  //guardar el estado de login en otro.
+  // Así que me decidí por usar el localStorage para guardar el comprobador del login
+  // al cargar la página. No sé si es lo correcto.
+
+  useEffect(() => {
+    const log = window.localStorage.getItem("log");
+    if (!log) {
+      navigate("/", { replace: true });
+    }
+  }, []);
+
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     loadPage();
@@ -44,7 +61,7 @@ const Naus = (props) => {
     <Nau>
       {ships.map((e) => (
         <Link to="/Fitxa" state={e} key={e.name + e.model}>
-          <ShipContent href="/Fitxa" >
+          <ShipContent href="/Fitxa">
             <h2 className="shipName"> Nom :{e.name}</h2>
             <h4 className="shipModel">Model: {e.model}</h4>
           </ShipContent>

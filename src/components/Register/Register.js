@@ -1,23 +1,22 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Regist, ButtonSubmit } from "../styled-c/styled-components.js";
 
 const Register = () => {
   const [name, setName] = useState("");
   const [pass, setPass] = useState("");
-  const [user, setUser] = useState(1);
 
   const navigate = useNavigate();
 
-  const submit = () => {
+  const submit = (e) => {
     if (name !== "" && pass !== "") {
       const data = { user: name, password: pass };
-      window.localStorage.setItem("user" + user, JSON.stringify(data));
-      setUser(user + 1);
+      window.localStorage.setItem("user", JSON.stringify(data));
+      // setUser(user + 1);
 
       navigate("/Login");
     } else {
-      setUser(user + 1);
+      e.preventDefault();
     }
   };
 

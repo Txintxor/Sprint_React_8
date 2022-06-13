@@ -1,7 +1,6 @@
-import React from "react";
 import { Fitx, Button } from "../styled-c/styled-components.js";
 import Card from "react-bootstrap/Card";
-import { useLocation } from "react-router-dom";
+import {Link,  useLocation } from "react-router-dom";
 
 const Fitxa = () => {
   const location = useLocation();
@@ -39,6 +38,8 @@ const Fitxa = () => {
             Classe: {ship.starship_class}
           </Card.Text>
         </Card>
+        <Link to="/Pilots" state={ship.pilots}>Pilots</Link>
+        <Link to="/Pelis" state={ship.films}>Pelis</Link>
         <Button className="tornaButton" href="/Naus">Torna</Button>
       </Fitx>
       
