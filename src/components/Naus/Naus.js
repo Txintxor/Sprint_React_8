@@ -42,19 +42,18 @@ const Naus = () => {
   // han cambiado cosas (redirect ya no funciona ahora es useNAvigate) además
   // que tengo Route en un componente separado de App.js y el login que debería
   //guardar el estado de login en otro.
-  // Así que me decidí por usar el localStorage para guardar el comprobador del login
-  // al cargar la página. No sé si es lo correcto.
+  // Así que me decidí por usar el localStorage para guardar un boleano del login
+  // y un useEffect se encarga de comprobarlo al cargar la página.
+  // No sé si es lo correcto.
 
   useEffect(() => {
     const log = window.localStorage.getItem("log");
     if (!log) {
       navigate("/", { replace: true });
+    } else {
+      window.addEventListener("scroll", handleScroll);
+      loadPage();
     }
-  }, []);
-
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    loadPage();
   }, []);
 
   return (

@@ -38,17 +38,17 @@ const Log = styled.form`
 `;
 
 const Regist = styled.form`
-display: flex;
-flex-direction: column;
-align-items: center;
-min-width: fit-content;
-margin-top: 5rem;
-padding: 2rem;
-border: solid #ffe91fdc 3px;
-border-radius: 5px;
-box-shadow: 3px 5px #ffe91fdc;
-color: white;
-background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: fit-content;
+  margin-top: 5rem;
+  padding: 2rem;
+  border: solid #ffe91fdc 3px;
+  border-radius: 5px;
+  box-shadow: 3px 5px #ffe91fdc;
+  color: white;
+  background: rgba(0, 0, 0, 0.6);
 `;
 
 const Fitx = styled.div`
@@ -112,6 +112,17 @@ const ShipContent = styled.div`
     font-size: 1.75rem;
   }
 `;
+const PilotContent = styled.div`
+  border: solid #ffe91fdc 3px;
+  border-radius: 5px;
+  box-shadow: 3px 5px #ffe91fdc;
+  width: 35rem;
+  height: fit-content;
+  margin: 1rem 5rem;
+  padding: 1rem;
+  font-size: 1.5rem;
+  word-break: break-all;
+`;
 
 const Button = styled.a`
   width: 60%;
@@ -138,4 +149,16 @@ const ButtonSubmit = styled.input`
   cursor: pointer;
 `;
 
-export { Button, ButtonSubmit, NaviBar, UlNav, Fitx, Hom, Log, Nau, Regist, ShipContent };
+export {
+  Button,
+  ButtonSubmit,
+  NaviBar,
+  UlNav,
+  Fitx,
+  Hom,
+  Log,
+  Nau,
+  Regist,
+  PilotContent,
+  ShipContent,
+};

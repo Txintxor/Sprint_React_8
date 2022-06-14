@@ -14,14 +14,11 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 export default () => (
   <Router>
     <Routes>
-      {/* Rutes protegides */}
+      <Route exact path="/" element={<Home />} />
       <Route path="/Naus" element={<Naus />} />
       <Route path="/Fitxa" element={<Fitxa />} />
       <Route path="/Pilots" element={<Pilots />} />
       <Route path="/Pelis" element={<Pelis />} />
-
-      {/* Rutes públiques */}
-      <Route exact path="/" element={<Home />} />
       <Route path="/Login" element={<Login />} />
       <Route path="/Register" element={<Register />} />
       <Route

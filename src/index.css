@@ -12,8 +12,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video, html {
 	margin: 0;
@@ -23,35 +23,42 @@ time, mark, audio, video, html {
 	font: inherit;
 	vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
 body {
-	background-image : url(./img/background.jpg);
+	background-image: url(./img/background.jpg);
 	background-size: cover;
 	-webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
 	background-attachment: fixed;
 	line-height: 1;
 }
+
 ol, ul {
 	list-style: none;
 }
+
 blockquote, q {
 	quotes: none;
 }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
 	content: '';
 	content: none;
 }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
 a {
 	text-decoration: none;
 	color: inherit;
@@ -75,23 +82,23 @@ body {
 }
 
 .App {
-	margin-top: 5rem;;
-	display:flex;
+	margin-top: 5rem;
+	;
+	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
 }
 
 .shipName,
-.cardTitle
- {
+.cardTitle {
 	font-size: 1.75rem;
 	margin-bottom: 1rem;
 	color: #ffe91fdc;
 }
 
-.shipModel {	
-	word-break:normal;
+.shipModel {
+	word-break: normal;
 }
 
 .cardText {
@@ -106,4 +113,12 @@ body {
 
 }
 
+.pilotName {
+	text-decoration: underline;
+	text-underline-offset: 6px;
 
+}
+
+.pilotName:hover {
+	color: #ffe91fdc;
+}
