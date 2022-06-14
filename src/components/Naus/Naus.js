@@ -57,7 +57,7 @@ const Naus = () => {
   }, []);
 
   return (
-    <Nau>
+    <Nau data-testid="list">
       {ships.map((e) => (
         <Link to="/Fitxa" state={e} key={e.name + e.model}>
           <ShipContent href="/Fitxa">

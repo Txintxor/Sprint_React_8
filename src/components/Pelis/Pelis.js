@@ -1,5 +1,3 @@
-import { useState, useEffect } from "react";
-import axios from "axios";
 import { useLocation } from "react-router-dom";
 import { Fitx, Button, peliContent } from "../styled-c/styled-components.js";
 import Card from "react-bootstrap/Card";
@@ -18,7 +16,7 @@ const Pelis = () => {
           Data d´estrena : {peli.release_date}
         </Card.Text>
       </Card>
-      <Button className="tornaButton" href="/Naus">
+      <Button role="button" className="tornaButton" href="/Naus">
         Torna
       </Button>
     </Fitx>
