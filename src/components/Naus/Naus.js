@@ -49,7 +49,7 @@ const Naus = () => {
   useEffect(() => {
     const log = window.localStorage.getItem("log");
     if (!log) {
-      navigate("/", { replace: true });
+      navigate("/Login", { replace: true });
     } else {
       window.addEventListener("scroll", handleScroll);
       loadPage();

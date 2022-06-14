@@ -1,11 +1,10 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { Log, ButtonSubmit } from "../styled-c/styled-components.js";
+import { Log, ButtonSubmit, Button } from "../styled-c/styled-components.js";
 
 const Login = () => {
   const [name, setName] = useState("");
   const [pass, setPass] = useState("");
-  const [auth, setAuth] = useState(false);
 
   const navigate = useNavigate();
 
@@ -14,7 +13,6 @@ const Login = () => {
       const local = JSON.parse(window.localStorage.getItem("user"));
       if (name === local.user && pass === local.password) {
         e.preventDefault();
-        setAuth(true);
         window.localStorage.setItem("log", true);
         navigate("/Naus");
       }
@@ -42,6 +40,9 @@ const Login = () => {
           id="password"
         />
         <ButtonSubmit type="submit" value="Envia" />
+        <Button className="tornaButton" href="/Register">
+          Crea usuari
+        </Button>
       </Log>
     </>
   );
