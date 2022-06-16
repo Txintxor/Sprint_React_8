@@ -1,3 +1,7 @@
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+
+import { Button } from "./components/styled-c/styled-components.js";
+
 import NavBar from "./components/NavBar/NavBar.js";
 import Home from "./components/Home/Home.js";
 import Naus from "./components/Naus/Naus.js";
@@ -6,10 +10,6 @@ import Login from "./components/Login/Login.js";
 import Pilots from "./components/Pilots/Pilots.js";
 import Pelis from "./components/Pelis/Pelis.js";
 import Register from "./components/Register/Register.js";
-
-import { Button } from "./components/styled-c/styled-components.js";
-import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 const App = () => (
   <div className="App">

@@ -1,5 +1,5 @@
 import { useLocation } from "react-router-dom";
-import { Fitx, Button, peliContent } from "../styled-c/styled-components.js";
+import { Fitx, Button } from "../styled-c/styled-components.js";
 import Card from "react-bootstrap/Card";
 
 const Pelis = () => {

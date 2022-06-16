@@ -1,8 +1,9 @@
 import { useState, useEffect } from "react";
-import { Fitx, Button, PilotContent } from "../styled-c/styled-components.js";
-import axios from "axios";
-import Card from "react-bootstrap/Card";
 import { useLocation, Link } from "react-router-dom";
+import axios from "axios";
+
+import { Fitx, Button, PilotContent } from "../styled-c/styled-components.js";
+import Card from "react-bootstrap/Card";
 
 const Fitxa = () => {
   const location = useLocation();

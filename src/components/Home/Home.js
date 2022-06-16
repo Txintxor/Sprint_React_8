@@ -1,4 +1,3 @@
-import React from "react";
 import { Hom } from "../styled-c/styled-components.js";
 import image from "../../img/home.jpg";
 const Home = () => {
